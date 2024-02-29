@@ -147,6 +147,8 @@ else:
     args.results_path = os.path.join(os.path.dirname(args.experiment_path), 'results')
 
 print(args.results_path)
+print(args.dataset)
+print(args.split)
 model_dir = os.path.join(args.results_path.replace('results', 'model'), args.dataset, 'split_' + str(args.split))
 results_dir = os.path.join(args.results_path, args.dataset, 'split_' + str(args.split))
 args.results_dir = results_dir
